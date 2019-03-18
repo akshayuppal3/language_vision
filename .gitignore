@@ -5,6 +5,7 @@ __pycache__/
 
 # misc
 src/annotations/*
+*.DS_store
 
 # C extensions
 *.so
