@@ -1,0 +1,7 @@
+
+{
+  "data_dir" : "input/reddit/",
+  "embedding_dir": "embeddings/",
+  "model_dir": "models/",
+  "input_dir": "input/"
+}
