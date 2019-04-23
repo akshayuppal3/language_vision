@@ -1,4 +1,4 @@
-name: metis-env
+name: multimodal-env
 
 channels:
   - defaults
