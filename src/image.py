@@ -76,8 +76,8 @@ class Image_modality:
 		model = ResNet50(weights='imagenet', include_top=True)
 		model_res = Model(input=model.input, output=model.get_layer('fc1000').output)
 		input = model_res.output
-		# model = Dense(100,activation= 'relu')(input)
-		out = Dense(4, activation='softmax')(input)
+		model = Dense(100,activation= 'relu',name='dense_30')(input)  ## specifying name for fusion model
+		out = Dense(4, activation='softmax')(model)
 		model_img = Model(input=model_res.input, output=out)
 		for layer in model_res.layers:                          ## freeze the keras layers
 			layer.trainable = False

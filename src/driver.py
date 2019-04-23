@@ -54,8 +54,8 @@ if __name__ == '__main__':
 
 	print ("finally fusing the vectors from each languge and image model")
 
-	model_1 = Model(input=image_model.input, output=image_model.get_layer('dense_30').output)
-	model_2 = Model(input=language_model.input, output=language_model.get_layer('dense_38').output)
+	model_1 = Model(input=image_model.input, output=image_model.get_layer('dense_30').output)       ## based on the name of resnet50 layer
+	model_2 = Model(input=language_model.input, output=language_model.get_layer('dense_38').output) ## based on the name of bilstm model
 
 	print(" getting the individual vecotrs for image and language")
 	print(" getting the fused training vecotrs")
