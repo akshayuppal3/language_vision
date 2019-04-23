@@ -11,7 +11,8 @@ from nltk.corpus import wordnet as wn
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import BernoulliNB
-from sklearn.metrics import classification_report,confusion_matrix
+import numpy as np
+from sklearn.svm import SVC
 from sklearn.ensemble import GradientBoostingClassifier
 
 

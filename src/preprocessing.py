@@ -39,7 +39,7 @@ class Preprocessing:
 		df_rage = (df_input.loc[df_input.subreddit == "rage"])
 		df_creepy = (df_input.loc[df_input.subreddit == "creepy"])
 		df_input = pd.concat([ df_happy[:length], df_rage[:length], df_gore[:length], df_creepy[:length]], ignore_index=True)
-		return df_input[:10]
+		return df_input[:10]            ## @TODO change
 
 	def get_train_test(self):
 		le = self.le
