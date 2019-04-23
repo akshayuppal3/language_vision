@@ -83,7 +83,7 @@ class Language:
 		model = Bidirectional(LSTM(units=100, return_sequences=True, dropout=0.25), merge_mode="concat")(model)
 		model = TimeDistributed(Dense(100, activation="relu"))(model)
 		model = Flatten()(model)
-		model = Dense(100, activation='relu')(model)
+		model = Dense(100, activation='relu',name='dense_38')(model)   ## specifying name for fusion model
 		out = Dense(4, activation='softmax')(model)
 		lng_model = Model(inputs=input1, outputs=out)
 		lng_model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
