@@ -14,7 +14,7 @@ from keras.layers import Bidirectional
 from keras.layers import LSTM
 from keras.layers import TimeDistributed
 
-embedding_path = os.path.join(util.embedding_dir,"fasttext_100.vec")
+embedding_path = os.path.join(util.embedding_dir,"glove.twitter.27B.100d.txt")
 model_dir = util.model_dir
 
 class Language:
