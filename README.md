@@ -1,5 +1,5 @@
 # launguage_vision
-project related to multimodal classification of emotion utilizing langugage and image modalities. This project was part of CS-594 (language and vision) course at UIC.
+project related to multimodal classification of emotion utilizing langugage and image modalities. It was part of CS-594  course (under Prof. Natalie Parde) requirement at UIC
 
 Installation Intructions:
 1)	Extract the zip file in root/
